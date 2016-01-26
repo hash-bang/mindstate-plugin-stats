@@ -39,7 +39,7 @@ module.exports = {
 						});
 					})
 					.then(function(next) {
-						if (mindstate.verbose) console.log(colors.blue('[Stats]'), 'Run', command);
+						if (mindstate.verbose) console.log(colors.blue('[Stats]'), 'Run', colors.cyan(command));
 						outStream = fs.createWriteStream(workspace.dir + '/' + id + '.txt');
 						next();
 					})
